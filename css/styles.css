@@ -1,0 +1,130 @@
+h1, h2{
+    text-align: center;
+    color: white;
+    
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background: rgb(103,103,103);
+background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: repeat;
+    }
+}
+body
+{
+
+    background: rgb(103,103,103);
+background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: repeat;
+}
+.ex1{
+    margin-top: 100px;
+    perspective: 800px;
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+  align-items: center;
+  
+    
+}
+
+.cube{
+    margin-top: 2em;
+    font-size: 4em;
+    width: 2em;
+    margin:1em;
+    padding: 1em;
+    transform-style:preserve-3d ;
+    transform: rotateX(-45deg) rotateY(45deg);
+    animation-name: giro ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    
+}
+.side{
+   position: absolute;
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    border-radius:  25%;
+    
+    background-color:white;
+   
+    
+    animation-name: cuboColores ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+   
+  
+
+
+}
+.front{
+    transform: translateZ(1em);
+    border-radius: 25% ;
+    border: 1px solid black;
+    
+}
+.top{
+    transform: rotateX(90deg) translateZ(1em);
+    border-radius: 25%;
+    border: 1px solid black;
+    
+}
+.right{
+    transform: rotateY(90deg) translateZ(1em);
+    border-radius: 25%;
+    border: 1px solid black;
+    text-align: center;
+    text-size-adjust : 10px;
+}
+.left{
+    transform: rotateY(-90deg) translateZ(1em);
+    border-radius: 25%;
+    border: 1px solid black;
+}
+.bottom{
+    transform: rotateX(-90deg) translateZ(1em);
+    border-radius: 25%;
+    border: 1px solid white;
+}
+.back{
+    transform: rotateY(-180deg) translateZ(1em);
+    border-radius:  25%;
+    border: 1px solid white;
+}
+
+@keyframes giro{
+    0%{transform: rotate3d(0, 1, 0 ,45deg);}
+    50%{transform: rotate3d(0, 1, 0 ,90deg);}
+    75%{transform: rotate3d(0, 1, 0 ,-45deg);}
+    90%{transform: rotate3d(0, 1, 0 ,-90deg);}
+    100%{transform: rotate3d(0, 1, 0 ,-180deg);}
+    }
+   
+.nucbaneta{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.nucba{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.index{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+    
+
