@@ -1,11 +1,14 @@
-h1{
+h1, h2{
     text-align: center;
     color: white;
     
 }
 body
 {
-    background-color: black;
+
+    background: rgb(103,103,103);
+background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: repeat;
 }
 .ex1{
     margin-top: 100px;
@@ -96,7 +99,25 @@ body
     100%{transform: rotate3d(0, 1, 0 ,-180deg);}
     }
    
-
-  
+.nucbaneta{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.nucba{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.index{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
     
 
